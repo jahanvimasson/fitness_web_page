@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+}
+
+h1{
+    font-size: 50px;
+    font-family:poppins;
+}
+
+p{
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #00FF00;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 5%;
+    margin-bottom : 1.4%;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    margin-top : 13;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+img{
+    width: 20%;
+}
+
+a{
+    font-weight : bold;
+    margin : 15;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #000;
+}
+
+.banner-area{
+
+    position: relative;
+    background-image: url(assets/banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.text-part{
+
+    padding : 20 px;
+    text-align: left;
+}     
+
+.about{
+    height: auto;
+    background-color: #fefefe;
+}
+
+.whyus{
+    
+    height: auto;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.pricing{
+
+    height:auto;
+}
+
+.schedule{
+
+    height: auto;
+    background-color: #262626;
+    color: white;
+}
+
+.projectbutton{
+
+    background-color: #00FF00;
+    box-shadow : none;
+    color : white;
+    font-family: poppins;
+    font-weight: bold;
+    font-size : 20px;
+    border: transparent;
+    padding-right : 45;
+    padding-left : 45;
+    padding-top : 18;
+    padding-bottom : 18;
+    transition: 0.4s;
+    
+
+}
+
+.projectbutton:hover{
+
+    background-color : white;
+    color : black !important;
+}
+
+.blackjoinbutton{
+
+    background-color: black;
+    box-shadow : none;
+    color : white;
+    font-family: poppins;
+    font-weight: bold;
+    font-size : 20px;
+    border: transparent;
+    padding-right : 45;
+    padding-left : 45;
+    padding-top : 18;
+    padding-bottom : 18;
+    transition: 0.4s;
+}
+
+.blackjoinbutton:hover{
+
+    background-color: #00FF00;
+}
+
+.whitejoinbutton{
+
+    background-color: white;
+    box-shadow : none;
+    color : black;
+    font-family: poppins;
+    font-weight: bold;
+    font-size : 20px;
+    border: transparent;
+    padding-right : 45;
+    padding-left : 45;
+    padding-top : 18;
+    padding-bottom : 18;
+    transition: 0.4s;
+}
+
+.whitejoinbutton:hover{
+
+    background-color: #00FF00;
+}
+  .threecolumn {
+    
+    float: left;
+    width: 30%;
+    padding: 5px;
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  .twocolumn {
+    
+    float: left;
+    width: 40%;
+    padding: 5px;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+  .projectimage{
+    
+    border-radius: 32px;
+    box-shadow: 8px 8px 18px darkslategray;
+    transition: 0.4s;
+  }
+
+  .projectimage:hover{
+    
+    box-shadow: none;
+    transform : scale(0.95);
+  }
+
+/*Continuous floating animation*/
+  .floating {
+	animation-name: floating;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 20px); }
+	100% { transform: translate(0, -0px); }
+}
+
+.floating2 {
+	animation-name: floating2;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating2 {
+	
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, -20px); }
+	
+	100% { transform: translate(0, -0px); }
+}
+
+/*PRICING SECTION*/
+
+  .pricingrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.pricingcolumn {
+    
+    box-shadow: 5px 5px 15px grey;
+    border-radius: 32px;
+    float: left;
+    width: 21%;
+    padding: 40px;
+    margin : 20px;   
+    transition: 0.4s;
+    
+  }
+.pricingcolumn:hover{
+ 
+    background-color: black;
+    color: white;
+}
+
+.pricingrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pricingtextstyle{
+
+    font-size: 20px;
+  }
+
+/*SCHEDULE*/
+.scheduletable{
+
+    text-align : center;
+    padding-left : 120px;
+    padding-right : 120px;
+    padding-top : 20px;
+    padding-bottom : 20px;
+    border: 5px solid white;
+    border-collapse : collapse;
+    color: white;
+}
